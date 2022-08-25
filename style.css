@@ -2,6 +2,7 @@
     margin: 0%;
     padding: 0%;
     font-family: 'Helvetica', cursive;
+    box-sizing: border-box;
 }
 
 
@@ -33,6 +34,8 @@
     justify-content: space-between;
     height: 100px;
     padding: 0 50px;
+    backdrop-filter: blur(5px);
+    background-color:rgba(245, 245, 220, 0.137)
 
 }
 
@@ -41,7 +44,7 @@
 border-bottom: 2px solid transparent
 
 }
-.item:hover>span{
+.item:hover>span {
 border-bottom: 2px solid rgb(0, 0, 0);
 cursor: pointer;
 }
@@ -66,6 +69,83 @@ cursor: pointer;
     margin-top: 40px;
     width: 100%;
     height: 60px;
-    
+    background-color: rgba(240, 248, 255, 0.253);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    padding: 10px;
+    justify-content: space-around;
+    text-align: center;
+}
 
+.search-icon{
+    width: 60px;
+    height: 20px;
+    margin-left: 24px;
+    margin-top: 12px;
+
+}
+
+.search>input{
+    width: 100px;
+    background: transparent;
+    border: none;
+}
+
+.search>input::placeholder{
+    capacity: .5;
+    color:black;
+}
+
+*:focus {
+    outline: none
+}
+
+.chek-icon{
+    width: 60px;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.chek-in{
+    display:flex;
+    align-items: center;
+    gap: 8px;
+    height: 40px;
+    padding: 4px 23px;
+}
+
+.chek-out{
+    display:flex;
+    align-items: center;
+    gap: 8px;
+    height: 40px;
+    padding: 4px 23px;
+}
+
+.amount{
+    display:flex;
+    align-items: center;
+    gap: 8px;
+    height: 40px;
+    padding: 4px 23px;
+}
+.user{
+    width: 23px;
+    height: 23px;
+    margin-left: 24px;
+    margin-top: 12px;
+}
+
+.search>button{
+    width: 147px;
+    height: 42px;
+    border-radius: 32px;
+    border: none;
+    background-color: wheat;
+    color: black;
+}
+
+.search>button:hover {
+    background-color: rgb(255, 255, 255);
+    transition: all 0.25s ease-out;
 }
