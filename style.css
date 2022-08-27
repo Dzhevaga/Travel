@@ -17,7 +17,7 @@
 
 .menu{
     display: flex;
-    color: black;
+    color:black;
     font-size: 24px;
     list-style: none;
 }
@@ -58,10 +58,11 @@ cursor: pointer;
 
 .title {
 
-    font-weight: 700;
+    font-weight: 700px;
     font-size: 100px;
     line-height: 114px;
-    color: black;
+    box-shadow: 10px;
+    color:wheat;
 }
 
 .search {
@@ -78,10 +79,10 @@ cursor: pointer;
 }
 
 .search-icon{
-    width: 60px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
     margin-left: 24px;
-    margin-top: 12px;
+    margin-top: 2px;
 
 }
 
@@ -105,6 +106,7 @@ cursor: pointer;
     height: 30px;
     margin-left: 10px;
     margin-top: 10px;
+    font-weight: bolder;
 }
 .chek-in{
     display:flex;
@@ -130,10 +132,10 @@ cursor: pointer;
     padding: 4px 23px;
 }
 .user{
-    width: 23px;
-    height: 23px;
+    width: 35px;
+    height: 35px;
     margin-left: 24px;
-    margin-top: 12px;
+    margin-top: 8px;
 }
 
 .search>button{
@@ -148,4 +150,76 @@ cursor: pointer;
 .search>button:hover {
     background-color: rgb(255, 255, 255);
     transition: all 0.25s ease-out;
+}
+
+.categories {
+    margin-top: 40px;
+}
+.categories-list {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    backdrop-filter: blur(5px);
+    background-color:rgba(245, 245, 220, 0.137)
+
+}
+
+.categories-item {
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    justify-items:center;
+}
+
+.categories-title {
+    font-family: 'Helvetica';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 37px;
+/* identical to box height */
+margin-bottom: 20px;
+    color:wheat;
+}
+
+.carusel {
+    margin-top: 50px;
+}
+
+.carusel-list {
+    display: flex;
+    list-style-type: none;
+    gap: 24px;
+    width: fit-content;
+    height: 200px;
+    margin-left: 60px;
+    margin-top: 30px;
+
+
+}
+
+.carusel-item {
+    display: block;
+    width: 310px;
+    height: 200px;
+    border-radius: 8px;
+    color: wheat;
+    background-color: wheat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+   
+}
+
+.carusel-item-text {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 31px;
+/* identical to box height */
+    position: absolute;
+    left: 24px;
+    bottom: 23px;
+    color: white;
+
 }
