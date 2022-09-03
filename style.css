@@ -12,7 +12,7 @@
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
-    position: absolute;
+    position: relative;
     
 }
 
@@ -20,6 +20,7 @@
     display: flex;
     color:black;
     font-size: 24px;
+    gap: 2px;
     list-style: none;
 }
 .item {
@@ -236,13 +237,128 @@ margin-bottom: 20px;
 }
 
 .card-item {
-    box-shadow: 0px 0px 20px;
-    border-radius: 16px;
-    padding: 24 16;
+    box-shadow: 0 0 20px 5px #d2d3d4;
     display: flex;
+    border-radius: 16px;
+    padding: 24px 16px;
     gap: 24px;
+    width: 527px;
+
+}
+.text1 {
+display: block;
+font-size: 16px;
+color: #9c9c9c
+}
+.text2 {
+display: block;
+
+font-family: 'Netflix Sans';
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+
+color: #000000;
+}
+.text3 {
+display: block;
+
+font-family: 'Netflix Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+color: #000000;
+opacity: 0.5;
+}
+.card-content {
+display: grid;
+align-content: stretch;
+
+}
+.card-content>button {
+padding: 16px 32px;
+gap: 11.02px;
+color: white;
+width: 140px;
+height: 52px;
+border: none;
+background: #2659C3;
+border-radius: 44.0621px;
+font-size: 16px;
+cursor: pointer;
+transition: all 1s ease;
+}
+.card-content>button:hover {
+background: #07225e;
 }
 
-.text1 {
+.card-item>img{
+    max-width: 200px;
+}
 
+.sub-title {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 37px;
+    /* identical to box height */
+    margin-bottom: 20px;
+        color:wheat;
+}
+
+.footer {
+    width: 100%;
+    height: auto;
+    background-color: rgb(102, 98, 98);
+}
+
+
+.col-logo {
+    display: flex;
+    text-align: center;
+    align-content: stretch;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.col {
+    color: rgb(44, 42, 42);
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    position: relative;
+   
+}
+
+.col>p {
+    margin: 20px;
+}
+
+.col>p:nth-child(5n) {
+    padding: 15px;
+    border: 1px solid 
+    
+}
+
+.social {
+    position: absolute;
+    bottom: 10px;
+    right: -50px;
+    display: flex;
+    gap: 5px;
+}
+
+.social>a {
+    display: block;
+
+}
+.social>a>img {
+    display: block;
+    height: 40px;
+    width: 40px;
 }
